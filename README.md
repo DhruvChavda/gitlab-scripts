@@ -82,6 +82,13 @@ Validates the environment before restore — does NOT modify anything:
 5. **Reconfigure & start** — kills stale processes, cleans runtime files, runs `gitlab-ctl reconfigure`, starts services, runs health checks
 6. **Post-restore validation** — checks database migrations, repository integrity, artifacts, LFS objects, and uploads (skip with `--skip-validation`)
 
+## Detailed guides
+
+For comprehensive step-by-step walkthroughs with troubleshooting tips and best practices, check out these companion blog posts:
+
+- [Self-Hosting GitLab EE: A Complete Installation Guide for Ubuntu](https://dhruvchavda.in/blogs/self-hosting-gitlab-ee-installation-guide/) — covers fresh GitLab EE installation from scratch
+- [GitLab Disaster Recovery: Restore from Backup Volume](https://dhruvchavda.in/blogs/gitlab-disaster-recovery-restore-from-backup/) — covers the full restore process using these scripts
+
 ## Important notes
 
 - `gitlab-secrets.json` is critical — without it, encrypted data (CI/CD variables, 2FA keys, runner tokens) cannot be decrypted
